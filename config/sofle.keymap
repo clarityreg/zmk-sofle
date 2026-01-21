@@ -15,6 +15,17 @@
 #define RAISE 2
 #define ADJUST 3
 
+/ {                                                                
+      // Add this behaviors block here (around line 19)              
+      behaviors {                                                    
+          mt: mod_tap {                                              
+              compatible = "zmk,behavior-hold-tap";                  
+              #binding-cells = <2>;                                  
+              flavor = "tap-preferred";                              
+              tapping-term-ms = <300>;                               
+              bindings = <&kp>, <&kp>;                               
+          };                                                         
+      };                                                             
 / {
     // Activate ADJUST layer by pressing raise and lower
 
@@ -33,7 +44,7 @@
         equals {
             bindings = <&kp EQUAL>;
             key-positions = <29 30>;
-        };
+        }; 
 
         colon {
             bindings = <&kp COLON>;
