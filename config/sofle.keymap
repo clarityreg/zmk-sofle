@@ -26,7 +26,6 @@
               bindings = <&kp>, <&kp>;                               
           };                                                         
       };                                                             
-/ {
     // Activate ADJUST layer by pressing raise and lower
 
     conditional_layers {
