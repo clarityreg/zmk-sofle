@@ -43,12 +43,12 @@
         compatible = "zmk,combos";
 
         minus {
-            bindings = <&kp MINUS>;
+            bindings = <&kp EQUAL>;
             key-positions = <29 30>;
         };
 
         equals {
-            bindings = <&kp EQUAL>;
+            bindings = <&kp TILDE>;
             key-positions = <41 44>;
         };
 
